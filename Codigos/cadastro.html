@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+    form{
+        padding: 50px;
+        border-left: 2px solid rgb(240, 164, 234);
+        border-right: 2px solid rgb(240, 164, 234);
+        border-top: 2px solid rgb(240, 164, 234);
+        border-bottom: 2px solid rgb(240, 164, 234);
+        background-color: rgb(235, 105, 231);
+    }
+
+    </style>
+</head>
+<body>
+    <h1> Faça o seu cadastro aqui: </h1>
+    <div class="formulario">
+    <form action="/submit" method="post">
+        <label for="matricula">Matrícula:</label>
+        <input type="text" id="matricula" name="matricula" required><br><br>
+
+        <label for="nome">Nome do Aluno:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="professor">Professor Orientador:</label>
+        <input type="text" id="professor" name="professor" required><br><br>
+        
+        <label for="nomedoprojeto">Nome do projeto:</label>
+        <input type="text" id="nomedoprojeto" name="nomedoprojeto" required><br><br>
+
+        <label for="turno">Turno:</label>
+        <select id="turno" name="turno">
+            <option value="matutino">Matutino</option>
+            <option value="vespertino">Vespertino</option>
+        </select><br><br>
+
+        <label for="Curso">Curso:</label>
+        <select id="curso" name="curso">
+            <option value="Informatica">Informática</option>
+            <option value="Mineracao">Mineração</option>
+        </select><br><br>
+
+        <label>Serie:</label><br>
+        
+        <input type="radio" id="opcao1" name="opcao" value="1">
+        <label for="opcao1">1 ano</label><br>
+        
+        <input type="radio" id="opcao2" name="opcao" value="2">
+        <label for="opcao2">2 ano</label><br>
+        
+        <input type="radio" id="opcao3" name="opcao" value="3">
+        <label for="opcao3">3 ano</label><br>
+        
+        <input type="radio" id="opcao4" name="opcao" value="4">
+        <label for="opcao4">4 ano</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    </div>
+    <p><a href="../index.html">Voltar para pagina inicial</a></p>
+</body>
+</html>
